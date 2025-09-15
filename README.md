@@ -141,6 +141,16 @@ endOfLine: 'auto',
 
 ## 📚 Documentación de la API
 
+### 📚 Documentación Swagger
+
+Este proyecto incluye **documentación automática de la API** generada con Swagger/OpenAPI.
+
+### 🚀 Acceder a Swagger
+
+Una vez que ejecutes la aplicación:
+
+
+
 ### Base URL
 
 http://localhost:3000
