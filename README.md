@@ -1,98 +1,226 @@
+# 👥 API de Usuarios - NestJS
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+<p align="center">
+  API REST para gestión de usuarios construida con <a href="http://nestjs.com" target="_blank">NestJS</a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+<p align="center">
+  <a href="https://www.npmjs.com/~nestjscore" target="_blank">
+    <img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" />
+  </a>
+  <a href="https://nodejs.org" target="_blank">
+    <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen" alt="Node Version" />
+  </a>
+  <a href="#" target="_blank">
+    <img src="https://img.shields.io/badge/typescript-%5E5.0.0-blue" alt="TypeScript" />
+  </a>
+</p>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## 📋 Descripción
 
-## Project setup
+API REST completa para la gestión de usuarios desarrollada con NestJS, TypeScript y almacenamiento en memoria. Incluye validaciones robustas, manejo de errores profesional y arquitectura modular siguiendo las mejores prácticas de desarrollo.
 
-```bash
-$ yarn install
-```
+### ✨ Características Principales
 
-## Compile and run the project
+- 🔧 **CRUD completo** de usuarios (Crear, Leer, Actualizar, Eliminar)
+- 🛡️ **Validaciones avanzadas** con class-validator
+- 📧 **Verificación de email único**
+- 🎯 **Manejo de errores HTTP** con excepciones personalizadas
+- 📝 **DTOs tipados** para entrada y salida de datos
+- 🏗️ **Arquitectura modular** con separación de responsabilidades
+- 💾 **Almacenamiento en memoria** (ideal para desarrollo y pruebas)
+- 🧪 **Código limpio** siguiendo principios SOLID
 
-```bash
-# development
-$ yarn run start
+## 🚀 Instalación Rápida
 
-# watch mode
-$ yarn run start:dev
+### Prerrequisitos
 
-# production mode
-$ yarn run start:prod
-```
+- Node.js >= 18.0.0
+- npm >= 8.0.0 o yarn >= 1.22.0
 
-## Run tests
+### ⚠️ Importante: NestJS CLI para Desarrollo
 
-```bash
-# unit tests
-$ yarn run test
+**Si planeas crear recursos adicionales** (controllers, services, modules, etc.), es **altamente recomendable** instalar NestJS CLI globalmente: [web:364][web:366]
 
-# e2e tests
-$ yarn run test:e2e
+### Pasos de Instalación
 
-# test coverage
-$ yarn run test:cov
-```
+1. Clonar el repositorio
+git clone https://github.com/AndresFelipeDiazG/api-usuarios
+cd api-usuarios
 
-## Deployment
+2. Instalar dependencias
+yarn install
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+3. Ejecutar en modo desarrollo
+yarn start:dev
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
 
-```bash
-$ yarn install -g @nestjs/mau
-$ mau deploy
-```
+La API estará disponible en: `http://localhost:3000`
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+## 📦 Dependencias
 
-## Resources
+### Dependencias que debes instalar manualmente:
+Validación y transformación de datos
+npm install class-validator class-transformer
 
-Check out a few resources that may come in handy when working with NestJS:
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+### Dependencias que ya vienen con NestJS por defecto:
+- `@nestjs/common`
+- `@nestjs/core` 
+- `@nestjs/platform-express`
+- `@nestjs/cli`
+- `reflect-metadata`
+- `typescript`
+- `eslint`
+- `prettier`
 
-## Support
+## ⚙️ Configuración de ESLint
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+El projeto utiliza la configuración base de NestJS con algunas reglas personalizadas desactivadas para mayor flexibilidad durante el desarrollo.
 
-## Stay in touch
+### Archivo `.eslintrc.js` (configuración actual):
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+module.exports = {
+parser: '@typescript-eslint/parser',
+parserOptions: {
+project: 'tsconfig.json',
+tsconfigRootDir: __dirname,
+sourceType: 'module',
+},
+plugins: ['@typescript-eslint/eslint-plugin'],
+extends: [
+'@nestjs',
+],
+root: true,
+env: {
+node: true,
+jest: true,
+},
+ignorePatterns: ['.eslintrc.js'],
+rules: {
+'@typescript-eslint/require-await': 'off',
+'@typescript-eslint/await-thenable': 'off',
+'@typescript-eslint/no-unsafe-assignment': 'off',
+'@typescript-eslint/no-unsafe-member-access': 'off',
+'@typescript-eslint/no-explicit-any': 'off',
+'@typescript-eslint/no-floating-promises': 'off',
+'@typescript-eslint/no-unsafe-argument': 'off',
+'@typescript-eslint/no-unsafe-call': 'off',
+'prettier/prettier': [
+'error',
+{
+endOfLine: 'auto',
+},
+],
+},
+};
 
-## License
+text
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+### ¿Por qué estas reglas están desactivadas?
+
+- **`@typescript-eslint/require-await`**: Permite funciones async sin await [web:356]
+- **`@typescript-eslint/await-thenable`**: Permite await en valores no Promise [web:360]
+- **`@typescript-eslint/no-unsafe-*`**: Desactiva warnings de TypeScript strict mode
+- **`@typescript-eslint/no-explicit-any`**: Permite uso de `any` type
+- **`prettier/prettier`**: Configurado con `endOfLine: 'auto'` para compatibilidad entre sistemas operativos
+
+## 🔧 Scripts Disponibles
+Desarrollo
+yarn start # Ejecutar aplicación
+yarn start:dev # Modo desarrollo con hot-reload
+yarn start:prod # Modo producción
+
+Build
+yarn start:build # Compilar aplicación
+
+
+## 📚 Documentación de la API
+
+### Base URL
+
+http://localhost:3000
+
+
+### Endpoints Disponibles
+
+#### 📝 Crear Usuario
+POST /usuarios
+
+Content-Type: application/json
+
+{
+"nombre": "Juan Pérez",
+"email": "juan@example.com"
+}
+
+
+#### 📋 Obtener Todos los Usuarios
+
+GET /usuarios/1
+
+
+#### ✏️ Actualizar Usuario
+PATCH /usuarios/1
+Content-Type: application/json
+
+{
+"nombre": "Juan Carlos Pérez"
+}
+
+
+#### 🗑️ Eliminar Usuario
+
+**Respuesta:**
+{
+"message": "Usuario con ID 1 eliminado correctamente"
+}
+
+
+### 🚨 Códigos de Error
+
+| Código | Descripción |
+|--------|-------------|
+| `400` | Bad Request - Datos inválidos o parámetros incorrectos |
+| `404` | Not Found - Usuario no encontrado |
+| `409` | Conflict - Email ya registrado |
+| `500` | Internal Server Error |
+
+
+### Validación de DTOs:
+
+Los DTOs utilizan decoradores de `class-validator` [web:221][web:342]:
+
+// create-usuario.dto.ts
+import { IsString, IsEmail, IsNotEmpty } from 'class-validator';
+
+export class CreateUsuarioDto {
+@IsString({ message: 'El nombre debe ser un texto' })
+@IsNotEmpty({ message: 'El nombre es obligatorio' })
+nombre: string;
+
+@IsEmail({}, { message: 'Debe ser un email válido' })
+@IsNotEmpty({ message: 'El email es obligatorio' })
+email: string;
+}
+
+
+## 🏗️ Estructura del Proyecto
+
+src/
+├── usuarios/
+│ ├── dto/
+│ │ ├── create-usuario.dto.ts # DTO para crear usuario
+│ │ └── update-usuario.dto.ts # DTO para actualizar usuario
+│ ├── interfaces/
+│ │ └── user.interface.ts # Interface del modelo User
+│ ├── usuarios.controller.ts # Controlador HTTP
+│ ├── usuarios.service.ts # Lógica de negocio
+│ └── usuarios.module.ts # Módulo de usuarios
+├── app.module.ts # Módulo principal
+└── main.ts # Punto de entrada con ValidationPipe
+
