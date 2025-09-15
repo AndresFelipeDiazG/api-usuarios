@@ -50,13 +50,13 @@ API REST completa para la gestión de usuarios desarrollada con NestJS, TypeScri
 
 1. Clonar el repositorio
 git clone https://github.com/AndresFelipeDiazG/api-usuarios
-cd api-usuarios
+- cd api-usuarios
 
 2. Instalar dependencias
-yarn install
+- yarn install
 
 3. Ejecutar en modo desarrollo
-yarn start:dev
+- yarn start:dev
 
 
 La API estará disponible en: `http://localhost:3000`
@@ -64,9 +64,9 @@ La API estará disponible en: `http://localhost:3000`
 ## 📦 Dependencias
 
 ### Dependencias que debes instalar manualmente:
-Validación y transformación de datos
-npm install class-validator class-transformer
+1. Validación y transformación de datos
 
+- yarn add class-validator class-transformer
 
 ### Dependencias que ya vienen con NestJS por defecto:
 - `@nestjs/common`
