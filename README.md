@@ -149,7 +149,9 @@ Este proyecto incluye **documentación automática de la API** generada con Swag
 
 Una vez que ejecutes la aplicación:
 
+Podrás acceder a:
 
+- **🌐 UI Interactiva**: http://localhost:3000/api-docs
 
 ### Base URL
 
