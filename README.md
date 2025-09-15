@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/~nestjscore" target="_blank">
-    <img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" />
+    <img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="yarn Version" />
   </a>
   <a href="https://nodejs.org" target="_blank">
     <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen" alt="Node Version" />
