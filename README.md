@@ -80,7 +80,7 @@ La API estará disponible en: `http://localhost:3000`
 
 ## ⚙️ Configuración de ESLint
 
-El projeto utiliza la configuración base de NestJS con algunas reglas personalizadas desactivadas para mayor flexibilidad durante el desarrollo.
+El proyecto utiliza la configuración base de NestJS con algunas reglas personalizadas desactivadas para mayor flexibilidad durante el desarrollo.
 
 ### Archivo `.eslintrc.js` (configuración actual):
 
@@ -194,7 +194,7 @@ Content-Type: application/json
 ### Validación de DTOs:
 
 Los DTOs utilizan decoradores de `class-validator` [web:221][web:342]:
-
+```
 // create-usuario.dto.ts
 import { IsString, IsEmail, IsNotEmpty } from 'class-validator';
 
@@ -207,10 +207,11 @@ nombre: string;
 @IsNotEmpty({ message: 'El email es obligatorio' })
 email: string;
 }
-
+```
 
 ## 🏗️ Estructura del Proyecto
 
+```
 src/
 ├── usuarios/
 │ ├── dto/
@@ -223,4 +224,4 @@ src/
 │ └── usuarios.module.ts # Módulo de usuarios
 ├── app.module.ts # Módulo principal
 └── main.ts # Punto de entrada con ValidationPipe
-
+```
