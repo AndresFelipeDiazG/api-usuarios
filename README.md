@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/~nestjscore" target="_blank">
-    <img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="yarn Version" />
+  <a href="https://yarnpkg.com" target="_blank">
+    <img src="https://img.shields.io/badge/yarn-%3E%3D1.22.0-blue" alt="Yarn Version" />
   </a>
   <a href="https://nodejs.org" target="_blank">
     <img src="https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen" alt="Node Version" />
