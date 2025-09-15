@@ -83,7 +83,7 @@ La API estará disponible en: `http://localhost:3000`
 El proyecto utiliza la configuración base de NestJS con algunas reglas personalizadas desactivadas para mayor flexibilidad durante el desarrollo.
 
 ### Archivo `.eslintrc.js` (configuración actual):
-
+```
 module.exports = {
 parser: '@typescript-eslint/parser',
 parserOptions: {
@@ -118,8 +118,7 @@ endOfLine: 'auto',
 ],
 },
 };
-
-text
+```
 
 ### ¿Por qué estas reglas están desactivadas?
 
@@ -130,13 +129,14 @@ text
 - **`prettier/prettier`**: Configurado con `endOfLine: 'auto'` para compatibilidad entre sistemas operativos
 
 ## 🔧 Scripts Disponibles
-Desarrollo
-yarn start # Ejecutar aplicación
-yarn start:dev # Modo desarrollo con hot-reload
-yarn start:prod # Modo producción
 
-Build
-yarn start:build # Compilar aplicación
+1. Desarrollo
+- yarn start # Ejecutar aplicación
+- yarn start:dev # Modo desarrollo con hot-reload
+- yarn start:prod # Modo producción
+
+2. Build
+- yarn start:build # Compilar aplicación
 
 
 ## 📚 Documentación de la API
